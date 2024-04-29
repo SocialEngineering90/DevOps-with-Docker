@@ -1,0 +1,30 @@
+@SocialEngineering90 ➜ /workspaces/codespaces-blank/Docker-course $ docker run -d --name nginx1 nginx
+name nginx2 nginx
+docker run -d --name nginx3 nginxUnable to find image 'nginx:latest' locally
+latest: Pulling from library/nginx
+b0a0cf830b12: Pull complete 
+8ddb1e6cdf34: Pull complete 
+5252b206aac2: Pull complete 
+988b92d96970: Pull complete 
+7102627a7a6e: Pull complete 
+93295add984d: Pull complete 
+ebde0aa1d1aa: Pull complete 
+Digest: sha256:ed6d2c43c8fbcd3eaa44c9dab6d94cb346234476230dc1681227aa72d07181ee
+Status: Downloaded newer image for nginx:latest
+a7a289180e743c808ac12c97de1c4e51e9011e650847cdf4b2e822bea68ea344
+@SocialEngineering90 ➜ /workspaces/codespaces-blank/Docker-course $ docker run -d --name nginx2 nginx
+28e997730401c279b31b8e7beaeabdeeff450ccd54526e4ceb86bef0e7fc8bf4
+@SocialEngineering90 ➜ /workspaces/codespaces-blank/Docker-course $ docker run -d --name nginx3 nginx
+1539b308eac49206b89dda5ddc13e56595b921b005b0a541378d1254a23e010e
+@SocialEngineering90 ➜ /workspaces/codespaces-blank/Docker-course $ docker stop nginx1
+nginx1
+@SocialEngineering90 ➜ /workspaces/codespaces-blank/Docker-course $ docker stop nginx2
+nginx2
+@SocialEngineering90 ➜ /workspaces/codespaces-blank/Docker-course $ docker ps -a
+CONTAINER ID   IMAGE         COMMAND                  CREATED          STATUS                      PORTS     NAMES
+1539b308eac4   nginx         "/docker-entrypoint.…"   14 seconds ago   Up 13 seconds               80/tcp    nginx3
+28e997730401   nginx         "/docker-entrypoint.…"   25 seconds ago   Exited (0) 9 seconds ago              nginx2
+a7a289180e74   nginx         "/docker-entrypoint.…"   26 seconds ago   Exited (0) 11 seconds ago             nginx1
+e61b3788b09b   hello-world   "/hello"                 2 minutes ago    Exited (0) 2 minutes ago              vibrant_jepsen
+5b85c22ea0be   hello-world   "/hello"                 2 minutes ago    Exited (0) 2 minutes ago              festive_banach
+@SocialEngineering90 ➜ /workspaces/codespaces-blank/Docker-course $ 

@@ -28,4 +28,22 @@ CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
 REPOSITORY    TAG       IMAGE ID       CREATED         SIZE
 nginx         latest    7383c266ef25   5 days ago      188MB
 hello-world   latest    d2c94e258dcb   12 months ago   13.3kB
+@SocialEngineering90 ➜ /workspaces/codespaces-blank/Docker-course $ docker rmi nginx:latest
+estUntagged: nginx:latest
+Untagged: nginx@sha256:ed6d2c43c8fbcd3eaa44c9dab6d94cb346234476230dc1681227aa72d07181ee
+Deleted: sha256:7383c266ef252ad70806f3072ee8e63d2a16d1e6bafa6146a2da867fc7c41759
+Deleted: sha256:284239a88aa2a215c3ab52265554c83612e73efea682954be87982e370c98f49
+Deleted: sha256:05092aeb22646fda43f7e25fc418b7e21942112b84bc0f5b2466f6206372e099
+Deleted: sha256:04de068faa51d09eb7e1e52a4911ffc894d2ab2640db17e77eab84ca22cada85
+Deleted: sha256:08b0ce47715b739cb30d253768b913e0d81a466f34b84addf24dc78ae61579e8
+Deleted: sha256:90f1c22432ddccd4e1f6cd933c964e71a8f6bdd39b035f60cf4b8153820db7b5
+Deleted: sha256:0a9e7b5b5ef53ef025d0cb5798a2a49aa52289a5d9ad86687b428c19a63a3e22
+Deleted: sha256:52ec5a4316fadc09a4a51f82b8d7b66ead0d71bea4f75e81e25b4094c4219061
+@SocialEngineering90 ➜ /workspaces/codespaces-blank/Docker-course $ docker rmi hello-world:latest
+Untagged: hello-world:latest
+Untagged: hello-world@sha256:a26bff933ddc26d5cdf7faa98b4ae1e3ec20c4985e6f87ac0973052224d24302
+Deleted: sha256:d2c94e258dcb3c5ac2798d32e1249e42ef01cba4841c2234249495f87264ac5a
+Deleted: sha256:ac28800ec8bb38d5c35b49d45a6ac4777544941199075dff8c4eb63e093aa81e
+@SocialEngineering90 ➜ /workspaces/codespaces-blank/Docker-course $ docker image ls
+REPOSITORY   TAG       IMAGE ID   CREATED   SIZE
 @SocialEngineering90 ➜ /workspaces/codespaces-blank/Docker-course $ 

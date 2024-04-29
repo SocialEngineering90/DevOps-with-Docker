@@ -1,0 +1,31 @@
+@SocialEngineering90 ➜ /workspaces/codespaces-blank/Docker-course $ docker ps -a
+CONTAINER ID   IMAGE         COMMAND                  CREATED          STATUS                      PORTS     NAMES
+1539b308eac4   nginx         "/docker-entrypoint.…"   14 seconds ago   Up 13 seconds               80/tcp    nginx3
+28e997730401   nginx         "/docker-entrypoint.…"   25 seconds ago   Exited (0) 9 seconds ago              nginx2
+a7a289180e74   nginx         "/docker-entrypoint.…"   26 seconds ago   Exited (0) 11 seconds ago             nginx1
+e61b3788b09b   hello-world   "/hello"                 2 minutes ago    Exited (0) 2 minutes ago              vibrant_jepsen
+5b85c22ea0be   hello-world   "/hello"                 2 minutes ago    Exited (0) 2 minutes ago              festive_banach
+@SocialEngineering90 ➜ /workspaces/codespaces-blank/Docker-course $ docker ps -a
+CONTAINER ID   IMAGE         COMMAND                  CREATED         STATUS                     PORTS     NAMES
+1539b308eac4   nginx         "/docker-entrypoint.…"   3 minutes ago   Up 3 minutes               80/tcp    nginx3
+28e997730401   nginx         "/docker-entrypoint.…"   3 minutes ago   Exited (0) 3 minutes ago             nginx2
+a7a289180e74   nginx         "/docker-entrypoint.…"   3 minutes ago   Exited (0) 3 minutes ago             nginx1
+e61b3788b09b   hello-world   "/hello"                 5 minutes ago   Exited (0) 5 minutes ago             vibrant_jepsen
+5b85c22ea0be   hello-world   "/hello"                 5 minutes ago   Exited (0) 5 minutes ago             festive_banach
+@SocialEngineering90 ➜ /workspaces/codespaces-blank/Docker-course $ docker image ls
+REPOSITORY    TAG       IMAGE ID       CREATED         SIZE
+nginx         latest    7383c266ef25   5 days ago      188MB
+hello-world   latest    d2c94e258dcb   12 months ago   13.3kB
+@SocialEngineering90 ➜ /workspaces/codespaces-blank/Docker-course $ docker rm -f $(docker ps -a -q)
+1539b308eac4
+28e997730401
+a7a289180e74
+e61b3788b09b
+5b85c22ea0be
+@SocialEngineering90 ➜ /workspaces/codespaces-blank/Docker-course $ docker ps -a
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+@SocialEngineering90 ➜ /workspaces/codespaces-blank/Docker-course $ docker image ls
+REPOSITORY    TAG       IMAGE ID       CREATED         SIZE
+nginx         latest    7383c266ef25   5 days ago      188MB
+hello-world   latest    d2c94e258dcb   12 months ago   13.3kB
+@SocialEngineering90 ➜ /workspaces/codespaces-blank/Docker-course $ 
